@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="lechelogo.jpg" type="image/png">
+    <title>Pinoy Essence</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: burlywood;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+
+        main {
+            margin: 20px;
+            padding: 25px;
+        }
+
+        header {
+            margin: 0px;
+            height: 0px;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(60, 24, 8);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .navbar-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand img {
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        .navbar-links a {
+            margin-left: 10px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: wheat;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .navbar-links a:hover {
+            color: black;
+            background-color: rgb(206, 157, 115);
+        }
+
+
+        .card {
+            margin-bottom: 20px;
+            border: 2px solid black;
+            background-color: rgb(196, 126, 76);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .card img {
+            margin: 30px;
+            padding: 35px;
+            width: 40%;
+            height: auto;
+            float: left;
+            border-radius: 15px;
+            transform: translateY(5px);
+            box-shadow: 0px 5px 20px rgba(15, 1, 1, 0.844);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card img:hover {
+            border-radius: 50%;
+            z-index: -1;
+            cursor: pointer;
+            transform: translateY(-15px);
+        }
+
+
+        .card-content {
+            padding: 20px;
+            margin: auto;
+        }
+
+        .card-content h3 {
+            text-align: center;
+            font-size: 55px;
+            margin-top: 80px;
+        }
+
+        .card-content p {
+            background-position: right center;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        .card-content .button {
+            display: inline-block;
+            padding: 20px 20px;
+            border-radius: 5px;
+            background-color: wheat;
+            color: black;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgb(18, 17, 17);
+            color: rgb(255, 242, 242);
+            transform: ease scale(0.3s);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            line-height: normal;
+        }
+
+        .gallery {
+            margin: 20px;
+            padding: 20px;
+            text-align: justify;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        #gallery h2 {
+            padding: 10px;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: rgb(60, 24, 8);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h3 {
+            font-family: Papyrus;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header style="height: 200px; width: 200px;">
+    </header>
+    <div class="navbar">
+        <div class="navbar-inner" style="margin: auto;">
+            <a href="#home" class="brand">
+                <img src="lechelogo.jpg" alt="lechelogo"
+                    style="width: 100px; height: 100px; margin: 0px; border-radius: 20px;">
+            </a>
+            <div class="navbar-links" style="font-size: 25px; text-align: right ;">
+                <a href="#">Home</a>
+                <a href="FoodComponents.html">Food
+                    Components</a>
+                <a href="About.html">About</a>
+                <a
+                    href="Contacts.html">Contacts</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="gallery">
+            <h2 style="font-family: Papyrus; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+color: rgb(33, 31, 31);">"The Philippines"</h2>
+            <p
+                style=" margin: 10px; padding: 10px; text-align: justify; color:rgb(79, 33, 12); font-size: 25px;      background-color: rgba(196, 126, 76, 0.622); border-radius: 20px;">
+                The
+                culture of the Philippines is a beautiful tapestry woven from a mix of indigenous traditions, foreign
+                influences, and a strong sense of community. It is a unique blend of customs, languages, music, art, and
+                food that makes the country special.
+
+                Food holds a special place in Filipino culture. The cuisine is a delicious combination of flavors and
+                spices influenced by different cultures. Rice is a staple in most meals, and it is enjoyed with various
+                dishes like stews, grilled seafood, and skewered meats. Filipinos love to share food, and it brings
+                people closer together.
+
+                The markets in the Philippines are vibrant and lively. They are bustling places where people gather to
+                buy fresh produce, seafood, and meat. The markets are filled with colorful fruits, vegetables, and
+                spices, creating a wonderful aroma. You can also find street food stalls offering tasty snacks. The
+                markets are not just about shopping; they are also places for trade and cultural exchange. People engage
+                in friendly conversations and enjoy the lively atmosphere.
+
+                Filipino culture emphasizes community and helping one another. This spirit of togetherness, known as
+                "bayanihan," is deeply rooted in Filipino society. Celebrations and festivals, such as fiestas, showcase
+                the country's rich traditions. These events are filled with music, dance, and vibrant costumes, giving
+                you a glimpse into the lively and diverse Filipino culture.
+
+                Overall, the culture of the Philippines is a beautiful blend of traditions, food, and a strong sense of
+                community. Exploring the markets and experiencing Filipino culture is an enriching journey filled with
+                delicious food, warm hospitality, and colorful celebrations. </p>
+            <div class="gallery">
+                <img src="  https://media.istockphoto.com/id/1098352082/photo/busy-street-in-manila-philippines.jpg?s=612x612&w=0&k=20&c=VSW8ktp3GPa4Rq5CNPvHOZqO6VjZWfREK6Cmscn8YV4="
+                    alt="Image1">
+                <img src="https://images.food52.com/qqOEbR9-C0fvN8QCImjzIT6doL0=/1200x675/343af2dc-4133-4b12-9760-48dcfeda578f--kamayanf52.jpg"
+                    alt="Image2">
+                <img src="https://gttp.imgix.net/316801/x/0/philippine-kalesa-parked-in-calle-crisologo-in-vigan-1.jpg?ar=1.91%3A1&w=1200&fit=crop"
+                    alt="Image3">
+                <img src="https://media.istockphoto.com/id/538492966/photo/quiapo-church-in-manila-philippines.jpg?s=612x612&w=0&k=20&c=qGAJ-0y5MHUa15YpQR95pggTvsbrdSfLE_pYBue-5ko="
+                    alt="Image4">
+                <img src="https://londrigan.com/photos/philippines/baliuag-night-markets/previews/03-baliuag-night-market.jpg"
+                    alt="Image5">
+                <img src="https://media.istockphoto.com/id/96707725/photo/stacks-of-ripe-mangoes.jpg?s=612x612&w=0&k=20&c=HHkxWZpUNsDg2jS3gPV-AjAtVJ4cxT-ECoXOPsXIVcM="
+                    alt="Image6">
+                <img src="https://media.istockphoto.com/id/1069517034/photo/quiapo-street-market-manila-philippines.jpg?s=612x612&w=0&k=20&c=gOOcBHvYYPcIYMEq4lPY8s2kHcj8hDdv9LDg8bS3hSY="
+                    alt="Image7">
+                <img src=" https://1.bp.blogspot.com/-1eZo5tCYSEI/YGkNZVmX4hI/AAAAAAAALK4/XKRGc-nsqEoV8yFfep48PbEdPyYpH54TgCLcBGAsYHQ/s1200/mayon%2Bvolcano.jpg  "
+                    alt="Image8">
+                <img src="https://media.istockphoto.com/id/1075492694/photo/government-center-of-bacolod-city.jpg?s=612x612&w=0&k=20&c=ei13CWzOy7DnWxqT18EEPWwxoLXGQ9nCw1J786-YEn4="
+                    alt="Image9">
+                <img src="https://media.istockphoto.com/id/586384374/photo/jeepneys-in-ermita.jpg?s=612x612&w=0&k=20&c=Uqza776hHH1YyOfdzTH8cpgD3jeNG2cRRhDGwijGFmQ=  "
+                    alt="Image10">
+                <img src="https://media.istockphoto.com/id/1060038522/photo/philippines-philippine-flag-textile-cloth-fabric-waving-on-the-top-sunrise-mist-fog.jpg?s=612x612&w=0&k=20&c=DFy7MSUy80vk9IViArW_ZgM5kKjaOzS3lNIuy5LdeZo= "
+                    alt="Image11">
+                <img src="https://media.istockphoto.com/id/912729152/photo/market-vendors-sell-fresh-vegetables-manila-philippines.jpg?s=612x612&w=0&k=20&c=xxo2Xosnnznzz2EPhPpn3JAiWHXgTQhPCnJUbT9gqm8=  "
+                    alt="Image12">
+            </div>
+        </section>
+
+    </main>
+    <div class="card">
+        <img src="https://www.eatingwell.com/thmb/YrI10pp9V6quKr98nscc_XFQ02g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5147351-a7e0a28fde814b40bdcc67075e933b96.jpg"
+            alt="Image1">
+        <div class="card-content">
+            <h3>Dishes</h3>
+            <p style="font-size: 25px; text-align: justify;">Filipino dishes are known for their delicious flavors,
+                diverse spices, and unique cooking techniques,
+                showcasing the rich cultural heritage of the Philippines. Rice, a staple food, plays a significant role
+                in many Filipino meals, serving as the perfect companion to an array of mouthwatering dishes.Filipino
+                cuisine is a celebration of diverse flavors, influenced by the country's history and cultural exchanges.
+                Each dish tells a story, inviting you to savor the unique combination of ingredients and the skillful
+                techniques employed in their preparation. From hearty stews to soul-warming soups and flavorful
+                stir-fries, Filipino dishes offer a delightful journey for the taste buds, showcasing the culinary
+                heritage and passion of the Filipino people.</p>
+            <a href="Dishes.html"
+                class="button">Open</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="card">
+        <img src="https://assets.bonappetit.com/photos/60e46c6701084801b06de2a3/1:1/w_2560%2Cc_limit/Halo-Halo-Recipe-2021.jpg"
+            alt="Image2">
+        <div class="card-content">
+            <h3>Desserts</h3>
+            <p style="font-size: 25px; text-align: justify;">Filipino desserts are a delightful and indulgent part of
+                the country's culinary
+                landscape. They embody
+                the creativity and passion of Filipino cuisine, combining traditional ingredients, cultural influences,
+                and innovative flavors to create unforgettable treats. From the vibrant and refreshing halo-halo, with
+                its colorful layers of shaved ice, sweet beans, fruits, and creamy toppings, to the velvety smoothness
+                of leche flan, a rich caramel custard that melts in your mouth, Filipino desserts offer a delightful
+                escape into a world of sweetness and indulgence. Whether savored during special occasions or enjoyed as
+                a simple pleasure, these desserts are crafted to leave a lasting impression on every palate, satisfying
+                even the most discerning sweet tooth.</p>
+            <a href="Desserts.html"
+                class="button">Open</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="card">
+        <img src="https://thelookout.com.ph/storage/photos/shares/Street%20Food%20cravings/Kwek.jpg" alt="Image3">
+        <div class="card-content">
+            <h3>Street Food</h3>
+            <p style="font-size: 25px; text-align: justify;">Filipino street food is a vibrant and exciting part of the
+                country's culinary landscape, representing the
+                dynamic street culture and diverse food scene that thrives in bustling cities and busy markets.
+                Everywhere you turn, there are street vendors offering a mouthwatering assortment of delectable and
+                budget-friendly treats that are sure to satisfy your cravings.Wander through the lively streets of the
+                Philippines, and you'll be greeted with enticing aromas wafting from sizzling grills and bubbling pots.
+                Skewered meats, known "ihaw-ihaw" are a common sight, with vendors expertly grilling marinated pork,
+                chicken, and even seafood to perfection. The charred and juicy
+                skewers are often accompanied by a tangy vinegar dipping sauce, adding a burst of flavor that
+                complements the smoky goodness of the grilled meats.</p>
+            <a href="Streetfoods.html"
+                class="button">Open</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Pinoy Essence. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
